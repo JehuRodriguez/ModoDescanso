@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
         {
             enSuelo = true;
         }
+
+        if (collision.gameObject.CompareTag("Obstaculo"))
+        {
+            Debug.Log("GAME OVER");
+        }
     }
 
 
