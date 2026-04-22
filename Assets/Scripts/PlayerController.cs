@@ -1,40 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float fuerzaSalto = 10f;
-    private Rigidbody2D rb;
-    private bool enSuelo = true;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    public float velocidad = 5f;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && enSuelo)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
-            enSuelo = false;
-        }
+        float movX = Input.GetAxis("Horizontal");
+        float movY = Input.GetAxis("Vertical");
+
+        transform.Translate(new Vector2(movX, movY) * velocidad * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Suelo"))
-        {
-            enSuelo = true;
-        }
-
         if (collision.gameObject.CompareTag("Obstaculo"))
         {
-            Debug.Log("GAME OVER");
+            SceneManager.LoadScene("GameOver");
         }
     }
-
-
-
 
 
 }
