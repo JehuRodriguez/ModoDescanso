@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48dccca78cc2e2e459bba814c6d0f809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SPAWNER
-  obstaculoPrefab: {fileID: 3813608617097133475, guid: 5875c6dd3d7d73c4c8498c1fe79ab3ff, type: 3}
+  obstaculoPrefab: {fileID: 142524203087771900, guid: af431da77f782924d9bf72fc71fe04c1, type: 3}
   tiempoMin: 1.5
   tiempoMax: 3
   puntosSpawn:
@@ -481,7 +481,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.27, y: 5.85}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -563,8 +563,8 @@ SpriteRenderer:
   m_SortingLayerID: -267025411
   m_SortingLayer: 2
   m_SortingOrder: 5
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8584906, g: 0.856334, b: 0.08503916, a: 1}
+  m_Sprite: {fileID: 21300000, guid: eee3426d8094b19438a5d2986b2a8500, type: 3}
+  m_Color: {r: 0.990566, g: 0.9903526, b: 0.9485137, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -583,8 +583,8 @@ Transform:
   m_GameObject: {fileID: 1092888440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.63, y: -3.37, z: 0}
+  m_LocalScale: {x: 0.54375005, y: 0.54714847, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
