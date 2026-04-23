@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 1092888442}
   - component: {fileID: 1092888441}
   - component: {fileID: 1092888445}
+  - component: {fileID: 1092888446}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -601,6 +602,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   velocidad: 5
+--- !u!114 &1092888446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092888440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bc75bb67b5cf44e91cd4f3a0edcd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBounds
 --- !u!1 &1295389781
 GameObject:
   m_ObjectHideFlags: 0
